@@ -1,4 +1,4 @@
-import { Item } from 'src/app/interfaces/iItem';
+import { Item } from 'src/app/interfaces/item';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -33,5 +33,21 @@ export class ListaDeCompraService {
 
   getListaDeCompra(){
     return this.listaDeCompra;
+  }
+
+  adicionarItem(valorItem: string):Item {
+    const id = this.listaDeCompra.length+1;
+    const item: Item = {
+      "id": id,
+      "nome": valorItem,
+      "data": new Date().toLocaleString('pt-BR'),
+      "comprado": false
+    }
+    return item;
+  }
+
+  adicionarItemNaLista(itemValor: string) {
+    const item = this.adicionarItem(itemValor);
+    return this.listaDeCompra.push(item);
   }
 }
