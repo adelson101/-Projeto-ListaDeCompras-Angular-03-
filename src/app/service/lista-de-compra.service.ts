@@ -28,7 +28,7 @@ export class ListaDeCompraService {
   ]
 
   constructor() {
-    console.log('Instanciando dependências necessárias para o serviço.');
+    this.listaDeCompra = JSON.parse( localStorage.getItem('items') || '[]' );
   }
 
   getListaDeCompra(){
@@ -48,6 +48,23 @@ export class ListaDeCompraService {
 
   adicionarItemNaLista(itemValor: string) {
     const item = this.adicionarItem(itemValor);
-    return this.listaDeCompra.push(item);
+    this.listaDeCompra.push(item);
+    this.atualizarLocalStrage();
+  }
+
+  editarItemDaLista(itemAntigo: Item, NomeEditadoDoItem: string) {
+    const itemEditado: Item = {
+      id: itemAntigo.id,
+      nome: NomeEditadoDoItem,
+      data: itemAntigo.data,
+      comprado: itemAntigo.comprado
+    }
+    const id = itemAntigo.id;
+    this.listaDeCompra.splice(Number(id)-1,1,itemEditado);
+    this.atualizarLocalStrage(); 
+  }
+
+  atualizarLocalStrage() {
+    localStorage.setItem('items',JSON.stringify(this.listaDeCompra));
   }
 }
