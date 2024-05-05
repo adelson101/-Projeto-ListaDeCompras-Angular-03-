@@ -1,27 +1,22 @@
-# LifeCycle
+A Lista de Compras Angular é um projeto simples desenvolvido em Angular, que permite aos usuários criar e gerenciar listas de compras de forma prática e eficiente. O projeto utiliza dados locais para armazenar as listas e o LocalStorage para persistir os dados localmente no navegador do usuário.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
+Recursos Principais:
 
-## Development server
+Criação de Listas: Os usuários podem criar novas listas de compras, inserindo os itens desejados e suas respectivas quantidades.
+Edição e Exclusão de Itens: É possível editar os itens das listas, alterando suas quantidades ou removendo-os, conforme necessário.
+Armazenamento Local: O projeto utiliza o LocalStorage para armazenar as listas de compras localmente no navegador do usuário, permitindo que as informações sejam mantidas mesmo após o fechamento da aplicação.
+Interface Intuitiva: A interface do projeto é simples e intuitiva, facilitando a navegação e o uso por parte dos usuários.
+Objetivo do Projeto:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+O principal objetivo da Lista de Compras Angular é fornecer uma ferramenta simples e eficiente para auxiliar os usuários na organização de suas compras, garantindo que não se esqueçam de nenhum item importante.
 
-## Code scaffolding
+Tecnologias Utilizadas:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Angular
+TypeScript
+HTML
+CSS
+LocalStorage
+Contribuições:
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+A Lista de Compras Angular é um projeto da Alura.
