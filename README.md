@@ -12,11 +12,12 @@ O principal objetivo da Lista de Compras Angular é fornecer uma ferramenta simp
 
 Tecnologias Utilizadas:
 
-Angular
-TypeScript
-HTML
-CSS
-LocalStorage
+Angular,
+TypeScript,
+HTML,
+CSS,
+LocalStorage,
+
 Contribuições:
 
 A Lista de Compras Angular é um projeto da Alura.
